@@ -21,36 +21,35 @@
     font-weight: 700;
 }
 
-:root{
+:root {
     --primary: #fe2c55;
     --black: #000;
     --text-color: #161823;
     --white: #fff;
-    --font-family: "TikTokFont", sans-serif;
+    --font-family: 'TikTokFont', sans-serif;
 
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
     --default-layout-horizontai-spacer: 24px;
 
     --search-border-radius: 92px;
-    
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 62.5%;
 }
-body{
+body {
+    overflow-y: overlay;
     font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5rem;
     text-rendering: optimizeSpeed;
 }
 
-//scrollbar
 html ::-webkit-scrollbar {
     border-radius: 0px;
     width: 8px;
@@ -68,7 +67,7 @@ html ::-webkit-scrollbar-thumb {
 
 html *::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgba(22, 24, 35, .06);
+    background-color: rgba(22, 24, 35, 0.06);
 }
 
 html ::-webkit-scrollbar-track {
@@ -81,32 +80,32 @@ html *::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0);
 }
 
-
-button,input,[tabindex]{
+button,
+input,
+[tabindex] {
     outline: none;
     border: none;
 }
-a[href]{
+a[href] {
     text-decoration: none;
     color: var(--text-color);
 }
-li{
+li {
     list-style-type: none;
 }
 
 body {
-    overflow-y: overlay;
     .tippy-box {
-    background-color: rgba(84,84,84,.92);
-    font-weight: 600;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    }   
-    .tippy-arrow{
-        color: rgba(84,84,84,.92);
+        background-color: rgba(84, 84, 84, 0.92);
+        font-weight: 600;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
     }
-    .tippy-content{
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-content {
         padding: 8px 9px;
     }
 }

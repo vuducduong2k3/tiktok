@@ -57,7 +57,6 @@ function Search() {
         fetchApi();
     }, [debounced]);
     return (
-        //
         <div>
             <HeadLessTippy
                 interactive

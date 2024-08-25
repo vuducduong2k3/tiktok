@@ -1,10 +1,9 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
+.wrapper {
+    overflow-y: overlay;
     width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
-    border-radius: 8px; 
+    border-radius: 8px;
     max-height: min((-96px + 100vh) - 60px, 734px);
     padding-top: 8px;
 }

@@ -40,6 +40,84 @@ const MENU_ITEMS = [
                     code: 'vi',
                     title: 'Tieng Viet',
                 },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
             ],
         },
     },
@@ -115,13 +193,13 @@ function Header() {
                 <div className={cx('actions')}>
                     {currentUser ? (
                         <>
-                            {iconActions.map((item, index) => {
+                            {iconActions.map((item,index) => {
                                 return (
                                     <Tippy key={index} delay={[0, 50]} content={item.content} placement="bottom">
-                                        <button className={cx('action-btn')}>
-                                            <item.type className={cx('inbox-icon')} />
-                                            {item.notifycation && <span>{item.notifycation}</span>}
-                                        </button>
+                                            <button  className={cx('action-btn')}>
+                                                <item.type className={cx('inbox-icon')} />
+                                                {item.notifycation && (<span>{item.notifycation}</span>)}
+                                            </button>                           
                                     </Tippy>
                                 );
                             })}
@@ -136,7 +214,11 @@ function Header() {
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <Image src={images.avartar} className={cx('user-avatar')} alt="Nguyen van a" />
+                            <Image 
+                            src={images.avartar} 
+                            className={cx('user-avatar')} 
+                            alt="Nguyen van a" 
+                            />
                         ) : (
                             <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />

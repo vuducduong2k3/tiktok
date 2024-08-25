@@ -18,9 +18,6 @@
 .menu-popper{
     padding-bottom: 8px;
 }
-.menu-body {
-    overflow-y: overlay;
-}
 .menu-item{
     &:hover{
         background-color: rgba(22,24,35,.03);  
@@ -41,7 +38,6 @@
     position: relative;
     height: 50px;
     margin-top: -8px;
-    flex-shrink: 0;
 }
 .back-btn {
     width: 50px;

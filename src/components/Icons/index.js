@@ -48,8 +48,9 @@ export const InboxIcon = ({ width = '3.2rem', height = '3.2rem', className }) =>
 );
 export const SearchIcon = ({ width = '2.4rem', height = '2.4rem', className }) => (
     <svg
-        className={className}
+    className={className}
         width={width}
+        dataE2e=""
         height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
